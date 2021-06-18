@@ -91,6 +91,8 @@
 		7E026A0F2670F18600086EBB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				7E94B096267CA768007D780F /* Base Coordinator */,
+				7E94B097267CA770007D780F /* Coordinators */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -98,6 +100,8 @@
 		7E026A102670F18600086EBB /* Logging */ = {
 			isa = PBXGroup;
 			children = (
+				7E94B098267CA78A007D780F /* Filters */,
+				7E94B099267CA78F007D780F /* Extensions */,
 			);
 			path = Logging;
 			sourceTree = "<group>";
@@ -112,6 +116,7 @@
 		7E026A122670F18600086EBB /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				7E94B09A267CA7B4007D780F /* User Input */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -140,6 +145,8 @@
 		7E026A162670F18600086EBB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E94B09F267CA7FA007D780F /* Xibs */,
+				7E94B09E267CA7E8007D780F /* Images */,
 				7E026A172670F18600086EBB /* Storyboards */,
 				7E026A182670F18600086EBB /* Swiftgen */,
 				7E026A192670F18600086EBB /* Fonts */,
@@ -180,6 +187,9 @@
 		7E026A1B2670F18600086EBB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7E94B0A2267CA82D007D780F /* Foundation */,
+				7E94B0A1267CA828007D780F /* Swift */,
+				7E94B0A0267CA81F007D780F /* UIKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +199,100 @@
 			children = (
 			);
 			path = "Custom Types";
+			sourceTree = "<group>";
+		};
+		7E94B096267CA768007D780F /* Base Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Base Coordinator";
+			sourceTree = "<group>";
+		};
+		7E94B097267CA770007D780F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		7E94B098267CA78A007D780F /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		7E94B099267CA78F007D780F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E94B09A267CA7B4007D780F /* User Input */ = {
+			isa = PBXGroup;
+			children = (
+				7E94B09D267CA7CA007D780F /* Form Validators */,
+				7E94B09C267CA7C2007D780F /* Field Validators */,
+				7E94B09B267CA7BC007D780F /* Protocols */,
+			);
+			path = "User Input";
+			sourceTree = "<group>";
+		};
+		7E94B09B267CA7BC007D780F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7E94B09C267CA7C2007D780F /* Field Validators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Field Validators";
+			sourceTree = "<group>";
+		};
+		7E94B09D267CA7CA007D780F /* Form Validators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Form Validators";
+			sourceTree = "<group>";
+		};
+		7E94B09E267CA7E8007D780F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7E94B09F267CA7FA007D780F /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		7E94B0A0267CA81F007D780F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7E94B0A1267CA828007D780F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		7E94B0A2267CA82D007D780F /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
