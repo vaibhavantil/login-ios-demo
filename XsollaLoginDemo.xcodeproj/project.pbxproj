@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D907965A71E54076FD779B9 /* Pods_XsollaLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5888340F9532F34A1B7B0601 /* Pods_XsollaLoginDemo.framework */; };
 		7E0269F92670F16400086EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0269F82670F16400086EBB /* AppDelegate.swift */; };
 		7E94B0A6267CAA84007D780F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0A5267CAA84007D780F /* AppConfig.swift */; };
 		7E94B0A9267CAA9E007D780F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0A7267CAA9E007D780F /* AppState.swift */; };
@@ -35,8 +34,7 @@
 		7E94B14A267CBCAA007D780F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0B5267CAC59007D780F /* NavigationController.swift */; };
 		7E94B14B267CBCAC007D780F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0B8267CAC5A007D780F /* Presenter.swift */; };
 		7E94B14C267CBCB4007D780F /* LoggerKitDefaultFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0C1267CAD58007D780F /* LoggerKitDefaultFilter.swift */; };
-		7E94B14D267CBCB6007D780F /* LoggerKitFilter_Gussent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0BF267CAD58007D780F /* LoggerKitFilter_Gussent.swift */; };
-		7E94B14E267CBCB8007D780F /* LoggerKitFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0C0267CAD58007D780F /* LoggerKitFilter.swift */; };
+		7E94B14D267CBCB6007D780F /* LoggerKitFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0BF267CAD58007D780F /* LoggerKitFilter.swift */; };
 		7E94B14F267CBCBA007D780F /* CategoryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0C3267CAD5E007D780F /* CategoryExtensions.swift */; };
 		7E94B150267CBCBC007D780F /* DomainExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0C2267CAD5E007D780F /* DomainExtensions.swift */; };
 		7E94B151267CBCBF007D780F /* LevelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94B0C4267CAD5E007D780F /* LevelExtensions.swift */; };
@@ -145,7 +143,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5888340F9532F34A1B7B0601 /* Pods_XsollaLoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XsollaLoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D38AB4E309FA1F810FDF362 /* Pods-XsollaLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XsollaLoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-XsollaLoginDemo/Pods-XsollaLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7E0269F52670F16400086EBB /* XsollaLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XsollaLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0269F82670F16400086EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,8 +169,7 @@
 		7E94B0BC267CAC65007D780F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7E94B0BD267CAC65007D780F /* AppCoordinatorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorBuilder.swift; sourceTree = "<group>"; };
 		7E94B0BE267CAC65007D780F /* MainContentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentCoordinator.swift; sourceTree = "<group>"; };
-		7E94B0BF267CAD58007D780F /* LoggerKitFilter_Gussent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerKitFilter_Gussent.swift; sourceTree = "<group>"; };
-		7E94B0C0267CAD58007D780F /* LoggerKitFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerKitFilter.swift; sourceTree = "<group>"; };
+		7E94B0BF267CAD58007D780F /* LoggerKitFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerKitFilter.swift; sourceTree = "<group>"; };
 		7E94B0C1267CAD58007D780F /* LoggerKitDefaultFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerKitDefaultFilter.swift; sourceTree = "<group>"; };
 		7E94B0C2267CAD5E007D780F /* DomainExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainExtensions.swift; sourceTree = "<group>"; };
 		7E94B0C3267CAD5E007D780F /* CategoryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryExtensions.swift; sourceTree = "<group>"; };
@@ -296,7 +292,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D907965A71E54076FD779B9 /* Pods_XsollaLoginDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +310,6 @@
 		67E6C00683740863A5EBB53B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5888340F9532F34A1B7B0601 /* Pods_XsollaLoginDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -591,8 +585,7 @@
 			isa = PBXGroup;
 			children = (
 				7E94B0C1267CAD58007D780F /* LoggerKitDefaultFilter.swift */,
-				7E94B0BF267CAD58007D780F /* LoggerKitFilter_Gussent.swift */,
-				7E94B0C0267CAD58007D780F /* LoggerKitFilter.swift */,
+				7E94B0BF267CAD58007D780F /* LoggerKitFilter.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -1033,7 +1026,7 @@
 				7E94B1B3267CBF68007D780F /* Assets.swift in Sources */,
 				7E94B15C267CBCE8007D780F /* SocialNetwork.swift in Sources */,
 				7E94B192267CBDA5007D780F /* LoadState.swift in Sources */,
-				7E94B14D267CBCB6007D780F /* LoggerKitFilter_Gussent.swift in Sources */,
+				7E94B14D267CBCB6007D780F /* LoggerKitFilter.swift in Sources */,
 				7E94B144267CBC97007D780F /* UserProfileAsyncUtility.swift in Sources */,
 				7E94B1A3267CBDCF007D780F /* UILayoutPriority.swift in Sources */,
 				7E94B16F267CBD4E007D780F /* MainVC.swift in Sources */,
@@ -1044,7 +1037,6 @@
 				7E94B1A0267CBDC9007D780F /* Optional.swift in Sources */,
 				7E94B176267CBD60007D780F /* UserAttributeListItemCell.swift in Sources */,
 				7E94B185267CBD89007D780F /* ActivityIndicatingViewController.swift in Sources */,
-				7E94B14E267CBCB8007D780F /* LoggerKitFilter.swift in Sources */,
 				7E94B17A267CBD6E007D780F /* ExpandableMenuItemsSectionView.swift in Sources */,
 				7E94B193267CBDA7007D780F /* RadialGradientView.swift in Sources */,
 				7E94B18F267CBD9D007D780F /* FloatingTitleTextField.swift in Sources */,
@@ -1273,16 +1265,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2P4458WF47;
 				INFOPLIST_FILE = XsollaLoginDemo/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xolla.sdk.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1293,16 +1286,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2P4458WF47;
 				INFOPLIST_FILE = XsollaLoginDemo/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xolla.sdk.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
