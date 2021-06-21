@@ -48,22 +48,22 @@ Below are examples of using the basic library methods.
 ### Receive access token by username and password
 
 
-```
+```swift
 LoginKit.shared.authByUsernameAndPasswordJWT(username: "username",
-                                                     password: "password",
-                                                     clientId: AppConfig.loginClientId,
-                                                     scope: "offline")
-        { [weak self] result in
-            switch result
-            {
-                case .success(let accessTokenInfo):
-                    self?.store(accessTokenInfo)
+                                             password: "password",
+                                             clientId: AppConfig.loginClientId,
+                                             scope: "offline")
+{ [weak self] result in
+    switch result
+    {
+        case .success(let accessTokenInfo):
+            self?.store(accessTokenInfo)
 
 
-                case .failure(let error):
-                    self?.processError(error)
-            }
-        }
+        case .failure(let error):
+            self?.processError(error)
+    }
+}
 ```
 
 
@@ -71,19 +71,19 @@ LoginKit.shared.authByUsernameAndPasswordJWT(username: "username",
 ### Authenticate user via social network
 
 
-```
+```swift
 let oAuth2Params = OAuth2Params(clientId: AppConfig.loginClientId,
-                                        state: UUID().uuidString,
-                                        scope: "offline",
-                                        redirectUri: AppConfig.redirectURL)
-        LoginKit.shared.getLinkForSocialAuth(providerName: "discord", oauth2params: oAuth2Params)
-        { [weak self] result in
-            switch result
-            {
-                case .success(let socialNetworkAuthURL): self?.processSocialNetworkAuthURL(socialNetworkAuthURL)
-                case .failure(let error): self?.processError(error)
-            }
-        }
+                                state: UUID().uuidString,
+                                scope: "offline",
+                                redirectUri: AppConfig.redirectURL)
+LoginKit.shared.getLinkForSocialAuth(providerName: "discord", oauth2params: oAuth2Params)
+{ [weak self] result in
+    switch result
+    {
+        case .success(let socialNetworkAuthURL): self?.processSocialNetworkAuthURL(socialNetworkAuthURL)
+        case .failure(let error): self?.processError(error)
+    }
+}
 ```
 
 
@@ -91,24 +91,24 @@ let oAuth2Params = OAuth2Params(clientId: AppConfig.loginClientId,
 ### Generate JWT
 
 
-```
+```swift
 LoginKit.shared.generateJWT(grantType: .refreshToken,
-                                    clientId: AppConfig.loginClientId,
-                                    refreshToken: resfreshToken,
-                                    clientSecret: nil,
-                                    redirectUri: AppConfig.redirectURL,
-                                    authCode: nil)
-        { [weak self] result in
-            switch result
-            {
-                case .success(let accessTokenInfo):
-                    self?.store(accessTokenInfo)
+                            clientId: AppConfig.loginClientId,
+                            refreshToken: resfreshToken,
+                            clientSecret: nil,
+                            redirectUri: AppConfig.redirectURL,
+                            authCode: nil)
+{ [weak self] result in
+    switch result
+    {
+        case .success(let accessTokenInfo):
+            self?.store(accessTokenInfo)
 
 
-                case .failure(let error):
-                    self?.processError(error)
-            }
-        }
+        case .failure(let error):
+            self?.processError(error)
+    }
+}
 ```
 
 
@@ -116,29 +116,29 @@ LoginKit.shared.generateJWT(grantType: .refreshToken,
 ### Register new user
 
 
-```
+```swift
 let oAuth2Params = OAuth2Params(clientId: AppConfig.loginClientId,
-                                        state: UUID().uuidString,
-                                        scope: "offline",
-                                        redirectUri: AppConfig.redirectURL)
-        LoginKit.shared.registerNewUser(oAuth2Params: oAuth2Params,
-                                        username: "username",
-                                        password: "password",
-                                        email: "email",
-                                        acceptConsent: nil,
-                                        fields: nil,
-                                        promoEmailAgreement: nil)
-        { [weak self] result in
-            switch result
-            {
-                case .success(let urlWithAuthCode):
-                    self?.handleUrlWithAuthCode(urlWithAuthCode)
+                                state: UUID().uuidString,
+                                scope: "offline",
+                                redirectUri: AppConfig.redirectURL)
+LoginKit.shared.registerNewUser(oAuth2Params: oAuth2Params,
+                                username: "username",
+                                password: "password",
+                                email: "email",
+                                acceptConsent: nil,
+                                fields: nil,
+                                promoEmailAgreement: nil)
+{ [weak self] result in
+    switch result
+    {
+        case .success(let urlWithAuthCode):
+            self?.handleUrlWithAuthCode(urlWithAuthCode)
 
 
-                case .failure(let error):
-                    self?.processError(error)
-            }
-        }
+        case .failure(let error):
+            self?.processError(error)
+    }
+}
 ```
 
 
@@ -146,17 +146,17 @@ let oAuth2Params = OAuth2Params(clientId: AppConfig.loginClientId,
 ### Reset password
 
 
-```
+```swift
 LoginKit.shared.resetPassword(loginProjectId: AppConfig.loginProjectID,
-                                      username: "username",
-                                      loginUrl: AppConfig.redirectURL)
-        { [weak self] result in
-            switch result
-            {
-                case .success: break
-                case .failure(let error): self?.processError(error)
-            }
-        }
+                              username: "username",
+                              loginUrl: AppConfig.redirectURL)
+{ [weak self] result in
+    switch result
+    {
+        case .success: break
+        case .failure(let error): self?.processError(error)
+    }
+}
 ```
 
 
@@ -164,31 +164,31 @@ LoginKit.shared.resetPassword(loginProjectId: AppConfig.loginProjectID,
 ### Get details of current authenticated user
 
 
-```
+```swift
 LoginKit.shared.getCurrentUserDetails(accessToken: currentAccessToken)
-        { [weak self] result in
-            switch result
-            {
-                case .success(let userDetails): self?.processUserDetails(userDetails)
-                case .failure(let error): self?.processError(error)
-            }
-        }
+{ [weak self] result in
+    switch result
+    {
+        case .success(let userDetails): self?.processUserDetails(userDetails)
+        case .failure(let error): self?.processError(error)
+    }
+}
 ```
 
 
 
-### Upload user avatar 
+### Upload user avatar
 
 
-```
+```swift
 LoginKit.shared.uploadUserPicture(accessToken: currentAccessToken, imageURL: imageURL)
-        { [weak self] result in
-            switch result
-            {
-                case .success(let uploadedImageURL): break
-                case .failure(let error): self?.processError(error)
-            }
-        }
+{ [weak self] result in
+    switch result
+    {
+        case .success(let uploadedImageURL): break
+        case .failure(let error): self?.processError(error)
+    }
+}
 ```
 
 
